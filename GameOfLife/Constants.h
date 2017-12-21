@@ -4,4 +4,4 @@ const int MAP_HEIGHT = 50;
 const int MAP_WIDTH = 20;
 
 // Probability for Populate Cell Map
-const double INITIAL_ALIVE_PROBABILITY = 0.1;
+const double INITIAL_ALIVE_PROBABILITY = 0.2;
