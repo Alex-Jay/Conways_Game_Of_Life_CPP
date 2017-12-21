@@ -35,17 +35,4 @@ namespace Utility
 		GetWindowRect(console, &r); // Retrieves Consoles Dimensions
 		MoveWindow(console, r.left, r.top, width, height, TRUE); // Resizes Console
 	}
-
-	//Clamp Double
-	inline char Clamp(double n, double min, double max)
-	{
-		// Author: ronag
-		// Source: https://codereview.stackexchange.com/questions/6502/fastest-way-to-clamp-an-integer-to-the-range-0-255
-
-		if (n < min)
-			return 0;
-		else if (n > max)
-			return max;
-		return n;
-	}
 }
