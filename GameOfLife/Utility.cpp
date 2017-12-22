@@ -27,7 +27,7 @@ namespace Utility
 		SetConsoleCursorPosition(console, CursorPosition);
 		//std::printf(c);
 		std::cerr << str;
-		std::flush(std::cerr);
+		std::cerr << std::flush;
 	}
 
 	// Set Console Size
