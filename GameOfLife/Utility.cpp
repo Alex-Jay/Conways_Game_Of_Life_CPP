@@ -18,13 +18,16 @@ namespace Utility
 	// GotoXY and draw a string
 	void Utility::GotoXY(int X, int Y, std::string str)
 	{
+		//const char * c = str.c_str();
 		HANDLE console;
 		COORD CursorPosition;
 		console = GetStdHandle(STD_OUTPUT_HANDLE);
 		CursorPosition.X = X;
 		CursorPosition.Y = Y;
 		SetConsoleCursorPosition(console, CursorPosition);
-		std::cout << str;
+		//std::printf(c);
+		std::cerr << str;
+		std::flush(std::cerr);
 	}
 
 	// Set Console Size

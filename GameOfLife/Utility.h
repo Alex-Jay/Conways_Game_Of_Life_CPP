@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Constants.h"
 #include <random>
+#include <cstdio>
 
 namespace Utility
 {
